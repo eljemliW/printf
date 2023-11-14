@@ -38,7 +38,7 @@ int printf_int(va_list arg)
 			j++;
 		}
 	}
-	_putchar(last + '0');
+	_putchar(rest + '0');
 
 	return (j);
 }
