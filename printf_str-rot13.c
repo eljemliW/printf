@@ -5,7 +5,7 @@
  * Return: count
  *
  */
-int printf_str-rot13(va_list arg)
+int printf_str_rot13(va_list arg)
 {
 	int a, b, count = 0;
 	int m = 0;

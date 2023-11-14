@@ -30,7 +30,7 @@ int printf_octal(va_list valu);
 int printf_uns(va_list arg);
 int printf_bin(va_list valu);
 int printf_sreversion(va_list arg);
-int printf_str-rot13-(va_list arg);
+int printf_str_rot13(va_list arg);
 int printf_integer(va_list arg);
 int printf_decimal(va_list arg);
 int _strlengh(char *str);
