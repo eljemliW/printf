@@ -28,9 +28,9 @@ Here:
 		n = 13;
 		while (n >= 0)
 		{
-			if (t[n].id[0] == format[m] && t[n].id[1] == format[m + 1])
+			if (t[n].p[0] == format[m] && t[n].p[1] == format[m + 1])
 			{
-				len += t[n].f(arg);
+				len += t[n].pf(arg);
 				m = m + 2;
 				goto Here;
 			}
