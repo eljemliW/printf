@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * printf_exSTR - print exclusuives string.
- * @valu: argumen t.
+ * @valu: argument.
  * Return:length of the str.
  */
 

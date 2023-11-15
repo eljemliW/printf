@@ -10,13 +10,13 @@ int _printf(const char * const format, ...)
 		{"%s", printf_str}, {"%c", printf_char},
 		{"%%", printf_char_37},
 		{"%i", printf_integer}, {"%d", printf_decimal}, {"%r", printf_sreversion},
-		{"%R", printf_str-rot13-}, {"%b", printf_bin}, {"%u", printf_uns},
+		{"%R", printf_str-rot13}, {"%b", printf_bin}, {"%u", printf_uns},
 		{"%o", printf_octal}, {"%x", printf_hexa}, {"%X", printf_HEXA},
 		{"%S", printf_exSTR}, {"%p", printf_p}
 	};
 
 	va_list arg;
-	int m = 0, n, len = 0;
+	int m = 0, n, lenght = 0;
 
 	va_start(arg, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -30,16 +30,16 @@ Here:
 		{
 			if (t[n].id[0] == format[m] && t[n].id[1] == format[m + 1])
 			{
-				len += t[n].f(arg);
+				lenght += t[n].f(arg);
 				m = m + 2;
 				goto Here;
 			}
 			n--;
 		}
 		_putchar(format[m]);
-		len++;
+		lenght++;
 		m++;
 	}
 	va_end(arg);
-	return (len);
+	return (lenght);
 }

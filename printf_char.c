@@ -12,4 +12,4 @@ int printf_char(va_list valu)
 	str = va_arg(valu, int);
 	_putchar(str);
 	return (1);
-}
+i}

@@ -21,25 +21,27 @@ typedef struct format
 } convert;
 
 int _putchar(char c);
-int printf_p(va_list valu);
-int printf_ha(unsigned long int nu);
-int printf_HA(unsigned int nu);
-int printf_exSTR(va_list valu);
-int printf_HEXA(va_list valu);
-int printf_hexa(va_list valu);
-int printf_octal(va_list valu);
-int printf_uns(va_list arg);
-int printf_bin(va_list valu);
-int printf_sreversion(va_list arg);
-int printf_str-rot13-(va_list arg);
+int printf_char(va_list valu);
+int print_string(va_list valu);
+int printf_modulo(void);
+int _strlengh(char *cp);
+int _strlenghc(const char *cp);
 int printf_integer(va_list arg);
 int printf_decimal(va_list arg);
-int _strlengh(char *str);
-int _strlenghc(const char *f);
+int printf_bin(va_list valu);
+int printf_uns(va_list arg);
+int printf_octal(va_list valu);
+int printf_hexa(va_list valu);
+int printf_HEXA(va_list valu);
+int printf_exSTR(va_list valu);
+int printf_p(va_list valu);
+int printf_ha(unsigned long int nu);
+int printf_sreversion(va_list arg);
+int printf_str-rot13(va_list arg);
+
+int printf_HA(unsigned int nu);
 int rev_str(char *f);
-int _strlenghc(const char *f);
-int printf_char_37(void);
-int printf_char(va_list valu);
+
 int printf_str(va_list valu);
 int _printf(const char *format, ...);
 
