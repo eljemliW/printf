@@ -37,9 +37,18 @@ int printf_exSTR(va_list valu);
 int printf_p(va_list valu);
 int printf_ha(unsigned long int nu);
 int printf_sreversion(va_list arg);
+<<<<<<< HEAD
 int printf_str-rot13(va_list arg);
 
 int printf_HA(unsigned int nu);
+=======
+int printf_str_rot13(va_list arg);
+int printf_integer(va_list arg);
+int printf_decimal(va_list arg);
+int _strlengh(char *str);
+int *_strcopy(char *dest, char *src);
+int _strlenghc(const char *f);
+>>>>>>> aae37e7023a8d88b2c63e4a08cf9e2413438f1c1
 int rev_str(char *f);
 
 int printf_str(va_list valu);
