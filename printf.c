@@ -9,8 +9,8 @@ int _printf(const char * const format, ...)
 	convert p[] = {
 		{"%s", print_string}, {"%c", printf_char},
 		{"%%", printf_modulo},
-		{"%i", printf_integer}, {"%d", printf_decimal}, {"%r", printf_srevsion},
-		{"%R", printf_str__rot13}, {"%b", printf_bin},
+		{"%i", printf_integer}, {"%d", printf_decimal}, {"%r", printf_sreversion},
+		{"%R", printf_str_rot13}, {"%b", printf_bin},
 		{"%u", printf_uns},
 		{"%o", printf_octal}, {"%x", printf_hexa}, {"%X", printf_HEXA},
 		{"%S", printf_exSTR}, {"%p", printf_p}
@@ -29,10 +29,9 @@ Here:
 		n = 13;
 		while (n >= 0)
 		{
-			if (t[n].p[0] == format[m] && t[n].p[1] == format[m + 1])
+			if (p[n].p[0] == format[m] && p[n].p[1] == format[m + 1])
 			{
-				lenght += t[n].f(arg);
-				lenght += t[n].pf(arg)
+				lenght += p[n].pf(arg);
 				m = m + 2;
 				goto Here;
 			}

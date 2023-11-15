@@ -39,8 +39,6 @@ int printf_ha(unsigned long int nu);
 int printf_sreversion(va_list arg);
 int printf_HA(unsigned int nu);
 int printf_str_rot13(va_list arg);
-int printf_integer(va_list arg);
-int printf_decimal(va_list arg);
 int printf_str(va_list valu);
 int _printf(const char *format, ...);
 
